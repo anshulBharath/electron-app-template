@@ -1,6 +1,6 @@
-# Classy Schedule Desktop App
+# Electron React Basic App
 
-A desktop application developed for CISC 480 capstone at the University of St. Thomas.
+This application provides all the files, scripts, and dependencies to get you started building basic electron react destop applications.
 
 ## Table of contents
 * [General info](#general-info)
@@ -9,7 +9,7 @@ A desktop application developed for CISC 480 capstone at the University of St. T
 * [Setup](#setup)
 
 ## General info
-This project is simple desktop application that creates a schedule for a client who enters in class, room, and professor preferences.
+This project is meant to provide developers with an easy way to get setup with electron react apps. There are a lot of mixed resources out there for developing electron react apps. There are even npm libaries that create this exact template for you (npm create-electron-react). I found that this is is straight forward and leaves out many of the extras.
 	
 ## Technologies
 Project is created with:
@@ -20,6 +20,7 @@ Project is created with:
 ## Prerequisites
 Minimum Software:
 * node 
+* npm
 * yarn 
 	
 ## Setup
