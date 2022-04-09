@@ -11,7 +11,7 @@ This application provides all the files, scripts, and dependencies to get you st
 * [Create Executables](#create-executables)
 
 ## General info
-This project is meant to provide developers with an easy way to get setup with electron react apps. There are a lot of mixed resources out there for developing electron react apps. There are even npm libaries that create this exact template for you (npm create-electron-react). I found that this is is straight forward and leaves out many of the extras.
+This project is meant to provide developers with an easy way to get setup with electron react apps. There are a lot of mixed resources out there for developing electron react apps. There are even npm libaries that create this exact template for you (npm create-electron-react). I found that this is is straight forward and leaves out many of the extras. The instruction assumes you have git setup on your machine, follow [these](https://www.educba.com/install-github/) instructions to get setup with git and GitHub Desktop.
 	
 ## Technologies
 Project is created with:
@@ -21,19 +21,18 @@ Project is created with:
 
 ## Prerequisites
 Minimum Software:
-* node v17.6.0
-* npm
-* yarn 
+* node v16.14.2
+* npm 8.5.0
 	
 ## Setup
-Before contributing to this project make sure you have node.js, npm, and yarn installed.
+Before contributing to this project make sure you have node.js and npm installed.
 node version required: v17.6.0
+Install node and npm [here](https://nodejs.org/en/download/) (Node installation comes with npm).
 Run these commands to check your installed status:
 
 ```
 $ npm -v
 $ node -v
-$ yarn -v
 ```
 
 Follow these [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) to mirror this repository.
