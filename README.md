@@ -9,6 +9,7 @@ This application provides all the files, scripts, and dependencies to get you st
 * [Setup](#setup)
 * [Customize](#customize)
 * [Create Executables](#create-executables)
+* [Troubleshooting](#troubleshooting)
 
 ## General info
 This project is meant to provide developers with an easy way to get setup with electron react apps. There are a lot of mixed resources out there for developing electron react apps. There are even npm libaries that create this exact template for you (npm create-electron-react). I found that this is is straight forward and leaves out many of the extras. The instruction assumes you have git setup on your machine, follow [these](https://www.educba.com/install-github/) instructions to get setup with git and GitHub Desktop.
@@ -91,4 +92,7 @@ $ npm run electron-pack
 
 You will now have your built zip files and unpacked files in the *dist* folder of the root folder.
 
+## Troubleshooting
+* An error that includes 'throw er;' (Rare)
+  - [Start Here](https://peterthaleikis.com/posts/how-to-fix-throw-er-unhandled-error-event.html) to fix
 
