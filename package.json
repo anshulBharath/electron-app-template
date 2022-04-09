@@ -1,10 +1,11 @@
 {
-  "name": "classy-schedule-desktop",
-  "productName": "ClassySchedule",
-  "version": "0.1.1",
+  "name": "electron-app-template",
+  "productName": "YourProductNameHere",
+  "description": "A tempate electron react app to show basics of APIs and IPC.",
+  "version": "0.0.1",
   "main": "public/electron.js",
   "private": true,
-  "author": "CISC480 Desktop Team",
+  "author": "Your Name Here",
   "homepage": "./",
   "dependencies": {
     "@emotion/react": "^11.8.2",
@@ -38,7 +39,7 @@
     "electron-build": "electron-builder",
     "release": "yarn react-build && electron-builder --publish=always",
     "build": "yarn react-build && yarn electron-build",
-    "electron-pack": "electron-builder -mwl -c.extraMetadata.main=build/electron.js",
+    "electron-pack": "electron-builder -mw -c.extraMetadata.main=build/electron.js",
     "electron-dev": "concurrently \"cross-env BROWSER=none && npm start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "eslintConfig": {
@@ -67,13 +68,13 @@
     "wait-on": "^6.0.1"
   },
   "build": {
-    "appId": "com.classy-schedule",
+    "appId": "com.sampleApp",
     "mac": {
-      "icon": "src/assets/icons/mac/logo-desktop.icns"
+      "icon": "src/assets/icons/mac/tempLogo.icns"
     },
     "win": {
       "target": "zip",
-      "icon": "src/assets/icons/win/logo-desktop.ico"
+      "icon": "src/assets/icons/win/tempLogo.ico"
     },
     "files": [
       "build/**/*",

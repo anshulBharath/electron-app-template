@@ -15,12 +15,20 @@ const {
     dialog
 } = electron;
 
-// !!! SET process environment. Comment this out if packaging for development!!!
+// This is the module that handles all database/API requests
+const DatabaseService = require(path.join(__dirname, 'services/databaseService.js'));
+// Global instance of database service.
+let DB = new DatabaseService();
+
+
+// !!! Sets process environment. Comment this out if packaging for development!!!
 //process.env.NODE_ENV = 'production';
 
 // Global variables for the scope of our app. This represents the main window and any additional windows plus our top menu.
 let mainWindow;
 let mainMenuTemplate;
+
+
 
 // Listen for app to ready
 app.on('ready', function () {
@@ -136,9 +144,8 @@ function buildMainMenuTemplate() {
 
 }
 
-// This is the object that handles all database/API requests
-const DatabaseService = require('../src/utils/services/databaseService');
-let DB = new DatabaseService();
+
+
 
 /**
  * Inter Process Communication is used to communicate to the UI which
@@ -148,6 +155,9 @@ let DB = new DatabaseService();
  * should be run at the start of the application.
  */
 function createIPCChannels() {
+
+    
+
     // IPC Signal Button
     ipcMain.on("toMain:Signal", (event, args) => {
         console.log('IPC LOG--> ' + args);
