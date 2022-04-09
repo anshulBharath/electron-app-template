@@ -1,6 +1,7 @@
 const { contextBridge } = require("electron");
 window.ipcRenderer = require('electron').ipcRenderer;
 
+
 /**
  * This function is a preload script to set up IPC channels.
  * 
@@ -12,8 +13,10 @@ window.ipcRenderer = require('electron').ipcRenderer;
  * To add a new channelyou have to add the string to the 'validChannels' and add a constant to src/utils/ipcChannels.js.
  * 
  * There isn't a lot of resources on this, but can use Stack Overflow and start here https://www.electronjs.org/docs/latest/api/ipc-main/
+ * I based the structure of the contextBridge from this StackOverflow: https://stackoverflow.com/questions/69214751/access-methods-in-electrons-main-process-from-render-process-after-building
  * 
  * Note: ContextBridge can be customized and validChannels is a string list that can be added to.
+ * 
  */
 contextBridge.exposeInMainWorld(
     "ContextBridge", {
