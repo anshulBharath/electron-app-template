@@ -21,7 +21,7 @@ Project is created with:
 
 ## Prerequisites
 Minimum Software:
-* node 
+* node v17.6.0
 * npm
 * yarn 
 	
