@@ -34,7 +34,7 @@ $ node -v
 $ yarn -v
 ```
 
-Follow these [instructions] (https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) to mirror this repository.
+Follow these [instructions](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) to mirror this repository.
 You can also fork the repository if you wish.
 
 Clone the repository you create by using HTTPS or SSH protocols:
@@ -65,5 +65,5 @@ There are many areas you will want to customize to make this application your ow
 * build
   - appId: name starts with com Ex. com.yourSampleApp
   - modify file paths
-  - Additional info on buildiing the electron app for production can be found [here] (https://www.electron.build/)
+  - Additional info on buildiing the electron app for production can be found [here](https://www.electron.build/)
 
