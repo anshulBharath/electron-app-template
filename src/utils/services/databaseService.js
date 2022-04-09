@@ -1,9 +1,16 @@
 const axios = require("axios");
-const API_BASE = 'https://capstonedbapi.azurewebsites.net/'
+const API_BASE = 'someAPIAddress/route/one/'
 
+/**
+ * This class provides a way to make API calls using axios, a npm library
+ * Info can be found here: https://axios-http.com/docs/intro
+ * and
+ * https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/#postjson
+ */
 class DatabaseService {
     constructor() {
-        this.authenticationToken = 'tokenInvalid';
+        // Add instance variables here
+        this.authenticationToken = '123456';
     }
     
     authenticateUser(user, pass) {
@@ -17,70 +24,18 @@ class DatabaseService {
         });
     }
 
-    setAuthenticationToken(token) {
+    pingDatabaseService() {
+        return 'DatabaseService successfully pinged!';
+    }
+
+    setToken(token) {
         this.authenticationToken = token;
     }
 
-    getAuthenticationToken() {
+    getToken() {
         return this.authenticationToken;
     }
-
-    invalidateToken() {
-        this.authenticationToken = 'tokenInvalid';
-    }
 }
 
-
-function getPrograms() {
-    return axios({
-        method: 'GET',
-        url: API_BASE + '/department-management/departments',
-        headers: {
-            'content-type': 'application/json'
-        }
-    });
-}
-
-/*
-function getCourses() {
-    return axios({
-        method: 'GET',
-        url: API_BASE + '/department-management/classes',
-        headers: {
-            'content-type': 'application/json'
-        }
-    });
-}
-
-function getProfessors() {
-    return axios({
-        method: 'GET',
-        url: API_BASE + '/department-management/professors',
-        headers: {
-            'content-type': 'application/json'
-        }
-    });
-}
-
-function getRooms() {
-    return axios({
-        method: 'GET',
-        url: API_BASE + '/department-management/rooms',
-        headers: {
-            'content-type': 'application/json'
-        }
-    });
-}
-
-function getSchedules() {
-    return axios({
-        method: 'GET',
-        url: API_BASE + '/department-management/schedules',
-        headers: {
-            'content-type': 'application/json'
-        }
-    });
-}
-*/
-
+// This exports the whole class to create instances in other classes.
 module.exports = DatabaseService;
