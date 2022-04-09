@@ -70,7 +70,7 @@ There are many areas you will want to customize to make this application your ow
   - Additional info on specify buildiing the electron app for production in package.json can be found [here](https://www.electron.build/)
 
 #### icons
-* Icons for your application can be added to /src/assets/icons
+* Icons for your application can be added to /src/assets/icons. Images must be at least 256x256.
   - mac: icons should have .icns extension
   - win: icons should have .ico extension
 
