@@ -3,12 +3,12 @@
 This application provides all the files, scripts, and dependencies to get you started building basic electron react destop applications.
 
 ## Table of contents
-* [General info](#general-info)
+* [General Info](#general-info)
 * [Technologies](#technologies)
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
 * [Customize](#customize)
-* [Create Executables]((#create-executables)
+* [Create Executables](#create-executables)
 
 ## General info
 This project is meant to provide developers with an easy way to get setup with electron react apps. There are a lot of mixed resources out there for developing electron react apps. There are even npm libaries that create this exact template for you (npm create-electron-react). I found that this is is straight forward and leaves out many of the extras.
