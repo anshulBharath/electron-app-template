@@ -93,6 +93,8 @@ $ npm run electron-pack
 You will now have your built zip files and unpacked files in the *dist* folder of the root folder.
 
 ## Troubleshooting
+* Running into issues with electron-builder
+  - Visit electron-builder and make sure you have the current version of electron-builder. Specified in package.json.
 * An error that includes 'throw er;' (Rare)
   - [Start Here](https://peterthaleikis.com/posts/how-to-fix-throw-er-unhandled-error-event.html) to fix
 
