@@ -34,11 +34,6 @@
   "scripts": {
     "start": "react-scripts start",
     "react-build": "react-scripts build",
-    "react-test": "react-scripts test",
-    "react-eject": "react-scripts eject",
-    "electron-build": "electron-builder",
-    "release": "yarn react-build && electron-builder --publish=always",
-    "build": "yarn react-build && yarn electron-build",
     "electron-pack": "electron-builder -mw -c.extraMetadata.main=build/electron.js",
     "electron-dev": "concurrently \"cross-env BROWSER=none && npm start\" \"wait-on http://localhost:3000 && electron .\""
   },
@@ -63,7 +58,7 @@
   "devDependencies": {
     "concurrently": "^7.0.0",
     "electron": "^17.1.0",
-    "electron-builder": "^22.14.13",
+    "electron-builder": "^23.0.3",
     "electron-packager": "^15.4.0",
     "wait-on": "^6.0.1"
   },
